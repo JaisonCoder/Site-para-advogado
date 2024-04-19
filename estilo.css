@@ -17,7 +17,7 @@
         height: 90px;
         background-color: black;
         color: aliceblue;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
 
@@ -37,6 +37,9 @@
         justify-content: space-between;
         padding-left: 40px;
 
+    }
+    .lista-flex li{
+        padding: 5%;
     }
 
     .lista-flex li:hover {
@@ -59,6 +62,7 @@
         transition: opacity 0.5s ease, transform 0.9s ease-in-out;
 
     }
+
     @keyframes movimento-flutuante {
         0% {
             transform: scale(1.0);
@@ -283,6 +287,7 @@
     }
 
     .conteiner-pc h1 {
+        
         position: absolute;
         font-size: 100px;
         padding: 20px;
@@ -311,12 +316,13 @@
         50% {
             width: 70%;
         }
-        100%{
+
+        100% {
             width: 0%;
         }
     }
 
- 
+
 
     .conteiner-3 {
         width: 100%;
@@ -402,7 +408,8 @@
         align-items: center;
 
     }
-    .lado-cor4 img{
+
+    .lado-cor4 img {
         animation: movimento-flutuante 7s infinite;
         width: 900px;
 
@@ -439,7 +446,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 10px) and (max-width: 1024px) {
 
     /* Estilos para dispositivos móveis */
     * {
@@ -449,9 +456,13 @@
     }
 
     header {
-        padding: 10px;
         text-align: center;
         background-color: #000;
+        max-width: 100%;
+    }
+
+    header img {
+        display: none;
     }
 
     #lupa-pesquisa {
@@ -460,14 +471,15 @@
 
 
     .lista-flex li {
-        padding: 5px;
+        padding: 5%;
+    
         list-style: none;
     }
 
     .lista-flex {
-        height: 40px;
+        width: 100%;
         display: flex;
-        background-color: rgb(32, 32, 32);
+       
         color: aliceblue;
         justify-content: space-around;
         align-items: center;
@@ -495,6 +507,7 @@
 
     .botao-açao {
         display: none;
+      
     }
 
     .lado-conteudo {
@@ -512,18 +525,25 @@
     .conteiner-2 {
         width: 100%;
         margin: 0;
-     
+
         text-align: center;
 
 
     }
 
     .lado-cor1 {
-        width: 90%;
+     
+        align-items: center;
         color: aliceblue;
         background-color: #000;
         padding: 20px;
         text-align: center;
+       
+    }
+    .conteiner-frase{
+        align-items: center;
+        margin: 10px auto;
+     
     }
 
     .lado-branco {
@@ -556,6 +576,7 @@
         color: #FFF;
 
     }
+
     .botao-falecomigo2 {
         display: flex;
         width: 70%;
@@ -575,6 +596,7 @@
 
 
     }
+
     .lista-beneficios li {
         padding: 10px;
     }
@@ -584,7 +606,8 @@
         padding: 20px;
         text-align: center;
     }
-    .conteiner-trabalhos li  {
+
+    .conteiner-trabalhos li {
 
         padding: 10px;
         text-align: center;
@@ -595,10 +618,10 @@
         background-color: rgb(255, 187, 0);
         padding: 20px;
         text-align: center;
-        
+
 
     }
-   
+
 
     .conteiner-pc img {
         display: none;
@@ -614,9 +637,9 @@
         background-color: rgb(255, 187, 0);
         text-align: center;
         margin: 0;
-        width: 90%;
+        width: 100%;
         padding: 20px;
-       
+
 
     }
 
