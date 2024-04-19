@@ -259,9 +259,14 @@
     }
 
     .conteiner-trabalhos li {
-        background-color: rgb(90, 93, 95);
+    
         width: 200px;
         height: 200px;
+    } 
+    .lista-trabalhos span{
+        font-size: 150px;
+        color: rgb(255, 184, 6);
+
     }
 
     .fade-in-left {
