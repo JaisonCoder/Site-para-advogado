@@ -411,7 +411,7 @@
 
     .lado-cor4 img {
         animation: movimento-flutuante 7s infinite;
-        width: 900px;
+        width: 150%;
 
     }
 
