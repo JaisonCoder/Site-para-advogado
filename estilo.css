@@ -30,16 +30,17 @@
     }
 
     .lista-flex {
-        width: 390px;
+        width: 490px;
         list-style: none;
         display: flex;
         text-align: center;
         justify-content: space-between;
-        padding-left: 40px;
+        
 
     }
     .lista-flex li{
         padding: 5%;
+    
     }
 
     .lista-flex li:hover {
@@ -58,9 +59,9 @@
         text-decoration: none;
         border: 1px solid white;
         border-radius: 6px;
-        animation: movimento-flutuante 5s infinite;
-        transition: opacity 0.5s ease, transform 0.9s ease-in-out;
-
+        margin: 29px;
+    
+      
     }
 
     @keyframes movimento-flutuante {
@@ -94,6 +95,9 @@
     .advogado-foto {
         animation: movimento-lateral 1s;
         transition: opacity 0.5s ease, transform 0.9s ease-in-out;
+        z-index: 1;
+      
+        
     }
 
     @keyframes movimento-lateral {
@@ -185,6 +189,8 @@
         align-items: center;
         width: 80%;
         text-align: center;
+        z-index: 10;
+        
     }
 
     .conteiner-2 {
@@ -415,7 +421,7 @@
     }
 
     .lado-cor4 img {
-        animation: movimento-flutuante 7s infinite;
+        
         width: 150%;
 
     }
