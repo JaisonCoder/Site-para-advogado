@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advocacia Farias — Excelência em Direito Previdenciário, Benefícios e Defesa Criminal.">
     <title>Advocacia Farias | Excelência Jurídica</title>
-    <meta name="description" content="Escritório de advocacia especializado em Direito Previdenciário, Auxílios e Defesa Criminal. Atendimento humanizado e resultados concretos.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <!-- Background decorative shapes -->
+    <div class="bg-shapes" aria-hidden="true">
+        <div class="shape shape-ring shape-1"></div>
+        <div class="shape shape-ring shape-2"></div>
+        <div class="shape shape-circle shape-3"></div>
+        <div class="shape shape-square shape-4"></div>
+        <div class="shape shape-ring shape-5"></div>
+    </div>
+
+    <!-- Header -->
     <header class="header" id="header">
         <div class="container header-inner">
             <a href="#inicio" class="logo">
-                <img src="Adovocia Farias.png" alt="Advocacia Farias">
+                <span class="logo-mark">AF</span>
+                <span class="logo-text">Advocacia <strong>Farias</strong></span>
             </a>
+            
             <nav class="nav" id="nav">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
@@ -26,7 +40,9 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <a href="#contato" class="btn btn-primary header-cta">Fale conosco</a>
+
+            <a href="#contato" class="btn btn-header">Fale conosco</a>
+            
             <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
                 <span></span><span></span><span></span>
             </button>
@@ -37,18 +53,26 @@
         <!-- Hero -->
         <section class="hero" id="inicio">
             <div class="container hero-inner">
-                <div class="hero-content reveal">
+                <div class="hero-content">
                     <span class="eyebrow">Advocacia Farias</span>
-                    <h1>Defendendo seus direitos com <span class="gold">excelência</span> e compromisso</h1>
-                    <p>Especialistas em Direito Previdenciário, recebimento de benefícios e Defesa Criminal. Atendimento humanizado, estratégias personalizadas e resultados concretos.</p>
+                    <h1>Defendendo seus direitos com <span class="gold">excelência</span></h1>
+                    <p>Especialistas em Direito Previdenciário, Benefícios e Defesa Criminal. Atendimento humanizado e resultados concretos.</p>
                     <div class="hero-actions">
-                        <a href="#contato" class="btn btn-primary">Agende uma consulta</a>
+                        <a href="#contato" class="btn btn-primary">Agendar consulta</a>
                         <a href="#especialidades" class="btn btn-outline">Nossas áreas</a>
                     </div>
                 </div>
-                <div class="hero-image reveal">
-                    <div class="image-frame">
-                        <img src="advogado-foto.png" alt="Advogado do Escritório Farias">
+
+                <div class="hero-visual">
+                    <div class="hero-photo-wrap">
+                        <div class="photo-ring"></div>
+                        <div class="photo-frame">
+                            <img src="advogado-foto.png" alt="Advogado da Advocacia Farias">
+                        </div>
+                        <!-- Floating icons around photo -->
+                        <span class="float-icon icon-1 material-symbols-outlined">gavel</span>
+                        <span class="float-icon icon-2 material-symbols-outlined">balance</span>
+                        <span class="float-icon icon-3 material-symbols-outlined">verified</span>
                     </div>
                 </div>
             </div>
@@ -57,21 +81,23 @@
         <!-- Quote -->
         <section class="quote-section">
             <div class="container">
-                <blockquote class="reveal">“Defendendo direitos, buscando justiça.”</blockquote>
+                <blockquote>“Defendendo direitos, buscando justiça.”</blockquote>
             </div>
         </section>
 
         <!-- Sobre -->
         <section class="about" id="sobre">
             <div class="container about-inner">
-                <div class="about-text reveal">
+                <div class="about-text">
                     <span class="eyebrow">Sobre o escritório</span>
                     <h2>Compromisso com a justiça e com você</h2>
                     <p>O Escritório Farias atua com seriedade, ética e dedicação. Oferecemos assessoria jurídica de alto nível, priorizando transparência e o sucesso dos nossos clientes em cada etapa do processo.</p>
                     <p>Nossa missão é garantir que seus direitos sejam defendidos com excelência técnica e atendimento humanizado.</p>
                 </div>
-                <div class="about-image reveal">
-                    <img src="martelo-adv.png" alt="Símbolo da justiça">
+                <div class="about-image">
+                    <div class="about-img-frame">
+                        <img src="martelo-adv.png" alt="Símbolo da justiça">
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,24 +105,30 @@
         <!-- Especialidades -->
         <section class="services" id="especialidades">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="eyebrow">Áreas de atuação</span>
                     <h2>Nossas especialidades</h2>
                     <p>Soluções jurídicas personalizadas para as suas necessidades</p>
                 </div>
                 <div class="services-grid">
-                    <article class="service-card reveal">
-                        <span class="material-symbols-outlined icon">attach_money</span>
+                    <article class="service-card">
+                        <div class="service-icon-wrap">
+                            <span class="material-symbols-outlined">account_balance</span>
+                        </div>
                         <h3>Previdência e Benefícios</h3>
                         <p>Assessoria completa em previdência privada e pública, aposentadorias e benefícios previdenciários.</p>
                     </article>
-                    <article class="service-card reveal">
-                        <span class="material-symbols-outlined icon">accessible</span>
+                    <article class="service-card">
+                        <div class="service-icon-wrap">
+                            <span class="material-symbols-outlined">accessible</span>
+                        </div>
                         <h3>Recebimento de Auxílios</h3>
                         <p>Agilidade e expertise para garantir o recebimento de auxílios e benefícios a que você tem direito.</p>
                     </article>
-                    <article class="service-card reveal">
-                        <span class="material-symbols-outlined icon">gavel</span>
+                    <article class="service-card">
+                        <div class="service-icon-wrap">
+                            <span class="material-symbols-outlined">gavel</span>
+                        </div>
                         <h3>Defesa Criminal</h3>
                         <p>Defesa técnica e estratégica em processos criminais, com foco em resultados e proteção dos seus direitos.</p>
                     </article>
@@ -107,26 +139,26 @@
         <!-- Diferenciais -->
         <section class="diferenciais" id="diferenciais">
             <div class="container">
-                <div class="section-header reveal">
+                <div class="section-header">
                     <span class="eyebrow">Por que nos escolher</span>
                     <h2>Nossos diferenciais</h2>
                 </div>
                 <div class="stats-grid">
-                    <div class="stat-card reveal">
+                    <div class="stat-card">
                         <div class="stat-number-wrap">
                             <span class="stat-number" data-target="90">0</span><span class="stat-suffix">%</span>
                         </div>
                         <p>de êxito em processos</p>
                     </div>
-                    <div class="stat-card reveal">
+                    <div class="stat-card">
                         <span class="material-symbols-outlined icon">schedule</span>
                         <p>Tempo recorde de soluções</p>
                     </div>
-                    <div class="stat-card reveal">
+                    <div class="stat-card">
                         <span class="material-symbols-outlined icon">handshake</span>
                         <p>Atendimento humanizado e ágil</p>
                     </div>
-                    <div class="stat-card reveal">
+                    <div class="stat-card">
                         <span class="material-symbols-outlined icon">verified</span>
                         <p>Ética e transparência</p>
                     </div>
@@ -134,10 +166,10 @@
             </div>
         </section>
 
-        <!-- CTA Contato -->
+        <!-- CTA -->
         <section class="cta-section" id="contato">
             <div class="container">
-                <div class="cta-box reveal">
+                <div class="cta-box">
                     <h2>Pronto para resolver seu caso?</h2>
                     <p>Entre em contato agora e receba uma avaliação personalizada. Estamos prontos para defender seus direitos com excelência.</p>
                     <a href="https://wa.me/55" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
@@ -151,7 +183,10 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-brand">
-                    <img src="Adovocia Farias.png" alt="Advocacia Farias" class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-mark">AF</span>
+                        <span class="logo-text">Advocacia <strong>Farias</strong></span>
+                    </div>
                     <p>Excelência jurídica com compromisso e resultados.</p>
                 </div>
                 <div class="footer-links">
@@ -162,7 +197,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 Advocacia Farias. Todos os direitos reservados.</p>
+                <p>© 2026 Advocacia Farias. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
